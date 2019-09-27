@@ -7,3 +7,4 @@ class Users(AbstractUser):
     address =models.CharField(max_length=80)
     user_picture= models.ImageField(upload_to='uploads')
     email = models.CharField(max_length=50,unique=True)
+    
