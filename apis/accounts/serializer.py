@@ -7,7 +7,7 @@ from apis.accounts.models import Users
 class UserSerializer(serializers.ModelSerializer):    
     class Meta:
         model = Users
-        fields = ['pk','email', 'username', 'password', 'address','first_name','last_name']
+        fields = ['pk','email', 'password', 'address','first_name','last_name']
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
@@ -24,7 +24,7 @@ class UpdateUserSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Users
-        fields = ['pk', 'first_name', 'last_name', 'password', 'email','username','address']
+        fields = ['pk', 'first_name', 'last_name', 'username','password', 'email','address']
         extra_kwargs = {'password': {'write_only': True}}
 
     def update(self, instance, validated_data):

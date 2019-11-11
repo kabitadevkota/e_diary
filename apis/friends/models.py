@@ -16,7 +16,6 @@ class Friends(models.Model):
     phone_no = models.CharField(max_length=10)
     gender= models.CharField(choices=GENDER,max_length=1)
     created_by= models.CharField(max_length=15)
-    created_at= models.DateTimeField(auto_now_add=True)
     
 
     
