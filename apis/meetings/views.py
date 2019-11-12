@@ -19,3 +19,12 @@ class SingleMeetingsAPIView(generics.RetrieveAPIView):
     serializer_class = MeetingsSerializer
     permission_classes = [permissions.AllowAny]
     queryset = Meetings.objects.all()
+
+
+class ListMeetingsAPIView(generics.ListAPIView):
+    serializer_class = MeetingsSerializer
+    queryset = Meetings.objects.all()
+
+class DeleteMeetingsAPIView(generics.DestroyAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    queryset = Meetings.objects.all()
