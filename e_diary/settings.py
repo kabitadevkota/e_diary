@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apis.accounts',
-    'apis.friends',
+    'apis.friend',
     'apis.notes',
     'apis.meetings'
 ]
