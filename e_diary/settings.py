@@ -26,7 +26,8 @@ SECRET_KEY = '19x90)_i_(v20m-gm-yau3q)#f7b)i9y8$5s-!%&^3s5%gka70'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# change this value according to your pc ip, multiple ips can be added
+ALLOWED_HOSTS = ['192.168.137.57','127.0.0.1','192.168.100.4']
 
 
 # Application definition
